@@ -6,6 +6,6 @@ DST_DIR=$HERE/src/traffic/messages
 
 mkdir -p $DST_DIR
 
-for proto in common replies requests; do
-    protoc -I=$SRC_DIR --python_out=$DST_DIR $SRC_DIR/${proto}.proto
+for proto in ${SRC_DIR}/*.proto ; do
+    protoc -I=$SRC_DIR --python_out=$DST_DIR ${proto}
 done
