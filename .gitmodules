@@ -1,3 +1,4 @@
 [submodule "traffic-service-protobuf"]
 	path = traffic-service-protobuf
 	url = https://github.com/agdsn/traffic-service-protobuf.git
+	branch=master
